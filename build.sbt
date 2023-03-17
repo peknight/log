@@ -30,4 +30,9 @@ lazy val logCore = (crossProject(JSPlatform, JVMPlatform) in file("log-core"))
   .settings(commonSettings)
   .settings(
     name := "log-core",
+    libraryDependencies ++= Seq(
+      "org.typelevel" %%% "cats-core" % catsVersion,
+    ),
   )
+
+val catsVersion = "2.9.0"
