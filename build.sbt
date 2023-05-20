@@ -20,7 +20,6 @@ lazy val log = (project in file("."))
     logCore.jvm,
     logCore.js,
   )
-  .enablePlugins(JavaAppPackaging)
   .settings(commonSettings)
   .settings(
     name := "log",
